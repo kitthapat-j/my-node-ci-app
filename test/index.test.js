@@ -1,6 +1,9 @@
-// src/index.test.js
-const add = require('../src/index.js'); // ต้องแน่ใจว่า path ถูกต้อง
+const assert = require('chai').assert;
+const add = require('../src/index.js');
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(add(1, 2)).toBe(3);
+describe('add function', () => {
+  it('should return the sum of two numbers', () => {
+    const result = add(1, 2);
+    assert.equal(result, 3);
+  });
 });
