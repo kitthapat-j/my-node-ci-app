@@ -1,5 +1,5 @@
-const assert = require('chai').assert;
-const add = require('../src/index.js');
+import { assert } from 'chai';
+import add from '../src/index.js';
 
 describe('add function', () => {
   it('should return the sum of two numbers', () => {
